@@ -2,6 +2,10 @@ from tkinter import *
 from backend
 
 
+def view_command():
+    for row in backend.view():
+        list1.insert(END, row)
+
 window = Tk()
 
 l1 = Label(window, text ="Title")
